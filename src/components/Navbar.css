@@ -1,0 +1,216 @@
+.navbar {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  background-color: #0a0a18;
+  transition: all 0.3s linear;
+  z-index: 1;
+  box-shadow: 0 0 60px rgb(61, 61, 61);
+}
+
+.logo-menu {
+  width: 100%;
+  display: flex;
+  gap: 8rem;
+  margin-left: -8rem;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.3s ease-in;
+}
+
+.navbar-logo span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0000ff;
+}
+
+.navbar-logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.logo-menu i {
+  font-size: 4.6rem;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.logo-menu i:hover {
+  cursor: pointer;
+  background-color: #262a49;
+}
+
+.search-box {
+  display: flex;
+  margin-top: -3rem;
+  margin-left: -4rem;
+  margin-right: 4rem;
+}
+
+.search-box .search-navigate i {
+  cursor: pointer;
+  margin-left: 2.9rem;
+  margin-top: 3rem;
+  position: absolute;
+  font-size: 2.7rem;
+  z-index: 12;
+  color: white;
+}
+
+.search-box input {
+  color: #cbcbcb;
+  background-color: #191938;
+  width: 100%;
+  z-index: 10;
+  font-size: 2.2rem;
+  padding: 2.5rem;
+  padding-left: 8rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.navbar-links {
+  width: 100%;
+  margin-top: -4rem;
+  margin-right: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links {
+  margin-left: -2rem;
+  width: 24.8rem;
+  font-size: 3rem;
+  list-style: none;
+  border-radius: 1rem;
+  padding: 0.3rem 0.2rem;
+}
+
+.links .navigate {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.links .navigate:hover {
+  cursor: pointer;
+  color: #2828ff;
+}
+
+.links .navigate span {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 8rem;
+  opacity: 1;
+}
+
+.links .navigate i {
+  font-size: 3rem;
+  margin-right: 1rem;
+  position: fixed;
+  padding-left: 2rem;
+}
+
+.link-selected {
+  background-color: #11112b;
+  z-index: 0;
+  transition: all 0.2s linear;
+}
+
+.toggle-mode {
+  width: 100%;
+  padding: 1.7rem 0.3rem;
+  border: 1.5px solid white;
+  border-radius: 1.5rem;
+  font-size: 2.3rem;
+  background-color: transparent;
+  color: white;
+  margin-right: 8rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s linear;
+}
+
+.toggle-mode:hover {
+  cursor: pointer;
+  background-color: #262a49;
+  border: 1.5px solid white;
+}
+
+.toggle-mode i {
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.toggle-mode span {
+  position: fixed;
+  margin-left: 8rem;
+}
+
+.diminished {
+  width: 6%;
+  padding-right: 0;
+  .navbar-logo {
+    position: inherit;
+    transform: translateX(-19.7rem);
+  }
+
+  .logo-menu i {
+    position: inherit;
+    transform: translateX(-19.7rem);
+  }
+
+  .links span {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .link-selected {
+    width: 100%;
+    background-color: #191938;
+  }
+
+  .search-box input {
+    display: none;
+  }
+
+  .search-box .search-navigate i {
+    background-color: #191938;
+    position: inherit;
+    padding: 2.7rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 4.5rem;
+  }
+
+  .links .navigate i {
+    font-size: 3rem;
+  }
+
+  .toggle-mode span {
+    display: none;
+  }
+
+  .toggle-mode {
+    width: 80%;
+    margin-right: 9rem;
+    padding: 2rem 2rem;
+  }
+
+  .toggle-mode i {
+    margin-left: -0.3rem;
+  }
+}

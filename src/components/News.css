@@ -1,0 +1,14 @@
+.news-screen {
+  padding-left: 7rem;
+  margin-left: 6%;
+  width: 94%;
+}
+
+.news-screen h1 {
+  font-size: 4rem;
+  color: black;
+  margin: 3rem 0;
+  margin-top: 4.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
